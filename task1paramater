@@ -1,0 +1,28 @@
+﻿using System;
+
+namespace ConsoleApp34
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] parametr = { 12, 24 };
+            PrintSum(12,24);
+           
+        }
+        static int PrintSum (int [] parametr)
+        {
+            int sum = 0;
+            foreach (var element in parametr)
+            {
+                sum += element;
+                Console.WriteLine(sum);
+                if(sum%2==0)
+                {
+                    return sum % 2;
+                } 
+            } return -1;
+        }
+        
+    }
+}
